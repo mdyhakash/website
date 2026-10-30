@@ -49,8 +49,14 @@ body {
   gap: 1.5rem;
 }
 .nav {
-  display: flex;
+  display: none;
   gap: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
 }
 .nav-link {
   text-decoration: none;
@@ -64,7 +70,11 @@ body {
   color: var(--link-color);
 }
 
+
+
+
 .contact-btn {
+  display: none;
   border: none;
   border-radius: 0.375rem;
   background-color: var(--primary-color);
@@ -77,4 +87,31 @@ body {
 }
 .contact-btn:hover {
   background-color: #5254f8;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-btn {
+    display: block;
+  }
+}
+
+.menu-btn {
+  display: none;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: var(--backgroun-color);
+  font-size: 1rem;
+  padding: 0.5rem 0.9rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
+
+.menu-icon {
+  height: 1.5rem;
+  width: 1.5rem;
 }
