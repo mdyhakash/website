@@ -116,20 +116,18 @@ body {
 .main-section {
   max-width: 1280px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2rem;
   padding: 0.6rem;
   align-items: center;
-  max-width: 0 auto;
+  margin: 0 auto;
 }
 
 .content-left {
-  max-width: 50%;
-  text-align: left;
+  text-align: center;
 }
 
 .section-label {
-  padding-left: 0;
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--primary-color);
@@ -146,7 +144,6 @@ body {
 }
 
 .content-right {
-  max-width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,4 +159,32 @@ body {
 .section-img {
   height: 100%;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    flex-direction: row;
+  }
+
+  .content-left {
+    max-width: 50%;
+    text-align: left;
+  }
+
+  .section-label {
+    font-size: 1rem;
+  }
+  .section-title {
+    padding-left: 0;
+    font-size: 3.8rem;
+  }
+
+  .section-description {
+    font-size: 1.13rem;
+    width: 78%;
+  }
+
+  .image-container {
+    height: 67vh;
+  }
 }
