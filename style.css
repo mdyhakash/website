@@ -217,3 +217,48 @@ body {
     height: 67vh;
   }
 }
+
+.company-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.6rem;
+  background-color: var(--light-gray);
+  border: none;
+  border-radius: 0.625rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.8rem 2.5rem;
+}
+
+.company-logo {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.svg-img {
+  height: 1.56rem;
+}
+.logo-txt {
+  font-size: 1rem;
+}
+@media screen and (min-width: 640px) {
+  .company-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .company-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+}
