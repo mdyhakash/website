@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
   --primary-color: #6366f1;
   --accent-color: #3f83f8;
@@ -16,6 +18,7 @@
 }
 
 body {
+  font-family: "Inter", sans-serif;
   height: 100vh;
   text-align: center;
   background-color: var(--backgroun-color);
@@ -261,4 +264,62 @@ body {
     font-size: 2.3rem;
     font-weight: bold;
   }
+}
+
+.testimonial-container {
+  background-color: var(--backgroun-color);
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.testimonial-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  gap: 2rem;
+}
+.testimonial-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(171, 163, 163);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid blue;
+}
+.testimonial-avatar img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.testimonial-text {
+  color: #555;
+  font-size: 0.875rem;
+}
+.testimonial-name {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+.testimonial-desc {
+  font-size: 0.875rem;
+  color: #777;
 }
